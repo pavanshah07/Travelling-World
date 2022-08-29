@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travelling World</title>
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <script src="bootstrap/bootstrap.min.js"></script>
+    <script src="bootstrap/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function validate() {
+            if (document.myform.firstname.value == "") {
+                alert("Please enter your firstname!");
+                document.myform.firstname.focus();
+                return false;
+            }
+            if(document.myform.lastname.value == ""){
+                alert("Please enter your lastname!");
+                document.myform.lastname.focus();
+                return false;
+            }
+            if(document.myform.num.value.length > 10 || document.myform.num.value.length <= 9){
+                alert("Mobile number should contain 10 numbers!");
+                document.myform.num.focus();
+                return false;
+            }
+            if(document.myform.dropdown1.value == document.myform.dropdown2.value){
+                alert("Both the destination should be different!");
+                document.myform.dropdown1.focus();
+                document.myform.dropdown2.focus();
+                return false;
+            }
+            if(document.myform.pass.value < 1){
+                alert("Minimum 1 passenger is compulsury!");
+                document.myform.pass.focus();
+                return false;
+            } 
+            return(true);
+        }
+    </script> 
+    <style>
+           .photo {
+            background-image: url("images/img5.webp");
+        }
+        .head{
+            background-color: rgb(235, 163, 163);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="head">
+        <div class="left">
+            <div class="logo">
+                <img src="images/logo2.webp" alt="">
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a class="text font_family" href="index.html">Home</a></li>
+                    <li><a class="text font_family" href="destination.html">Destination</a></li>
+                    <li><a class="text font_family active" href="registration.html">Registration</a></li>
+                    <li><a class="text font_family" href="about.html">About</a></li>
+                    <li><a class="text font_family" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="right">
+            <p class="text font font_family">Contact No. : 10(256)-928 256</p>
+        </div>
+    </div>
+
+    <div class="photo">
+        <div class="content font_family">
+            <h3>Registration</h3>
+            <p>Pixel perfect design with awesome content</p>
+            <a href="#">Explore Now</a>
+        </div>
+    </div>
+
+    <div class="where">
+        <h2>Where you want to go?</h2>
+        <input class="mihir" type="text" placeholder="Where to go?">
+        <input class="mihir" type="date" />
+        <select class="mihir" name="travel" id="">
+            <option value="">Travel Type</option>
+            <option value="">Another Option</option>
+            <option value="">Some Option</option>
+        </select>
+        <a href="#">Search</a>
+    </div>
+
+    <div class="registration">
+        <center>
+            <h3><b>Trip Registration Form</b></h3>
+            <h4>Register for our organization's annul trip</h4>
+            <form action="#" name="myform" onsubmit="(validate());">
+                <table>
+                    <tr>
+                        <td>First name :</td>
+                        <td><input type="text" class="mains" name="firstname"></td>
+                    </tr>
+                    <tr>
+                        <td>Last name :</td>
+                        <td><input type="text" class="mains" name="lastname"></td>
+                    </tr>
+                    <tr>
+                        <td>Mobile number :</td>
+                        <td><input type="number" class="mains" name="num" required></td>
+                    </tr>
+                    <tr>
+                        <td>Email :</td>
+                        <td><input type="email" class=" mains main2" name="email" required></td>
+                    </tr>
+                    <tr>
+                        <td>Date of Birth :</td>
+                        <td><input type="date" class="mains main2" name="date" required></td>
+                    </tr>
+                    <tr>
+                        <td>From :</td>
+                        <td><select class="mains main2" name="dropdown1" id="dd1">
+                                <option class="btn2" value="America">America</option>
+                                <option class="btn2" value="Austraila">Australia</option>
+                                <option class="btn2" value="Bangkok">Bangkok</option>
+                                <option class="btn2" value="Canada">Canada</option>
+                                <option class="btn2" value="Dubai">Dubai</option>
+                                <option class="btn2" value="London">London</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>To :</td>
+                        <td><select class="mains main2" name="dropdown2" id="dd2">
+                                <option class="btn2" value="America">America</option>
+                                <option class="btn2" value="Austraila" selected>Australia</option>
+                                <option class="btn2" value="Bangkok">Bangkok</option>
+                                <option class="btn2" value="Canada">Canada</option>
+                                <option class="btn2" value="Dubai">Dubai</option>
+                                <option class="btn2" value="London">London</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>Passengers :</td>
+                        <td><input type="number" class="mains" name="pass"></td>
+                    </tr>
+                    <tr>
+                        <td>Terms and conditions :</td>
+                        <td><input type="radio" name="radio" class="mains"> Agree
+                            <input type="radio" name="radio" class="mains"> Disagree
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Remarks :</td>
+                        <td><textarea name="textarea" id="" cols="23" rows="5"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="submit" class="btn2" onclick="validateprice()">
+                            <input type="reset" class="btn2">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </center>
+    </div>
+
+    <div class="plat">
+        <div class="context">
+            <h3>Subscribe Our Newsletter</h3>
+            <p>Subscribe newsletter to get offers and about</p>
+            <p>new places to discover</p>
+        </div>
+        <input type="email" placeholder="Your Email" />
+        <a href="#">Subscribe</a>
+    </div>
+
+    <div class="container footer">
+        <div class="row">
+            <div class="col-sm-3">
+                <img src="images/logo2.webp" alt="logo not found" class="end2">
+                <p>5th flora, 700/D kings road, green</p>
+                <p>lane New York-1782</p>
+                <p>+10 367 826 2567</p>
+                <p>contact@carpenter.com</p>
+            </div>
+            <div class="col-sm-3">
+                <h3 class="end2">Company</h3>
+                <p>Pricing</p>
+                <p>About</p>
+                <p>Gallery</p>
+                <p>Contact</p>
+            </div>
+            <div class="col-sm-3">
+                <h3 class="end2">Popular Destination</h3>
+                <p>Indonesia</p>
+                <p>America</p>
+                <p>India</p>
+                <p>Switzerland</p>
+            </div>
+            <div class="col-sm-3">
+                <h3 class="end2">Instagram</h3>
+                <div class="end3">
+                    <div>
+                        <img src="images/small1.webp" alt="">
+                        <img src="images/small2.webp" alt="">
+                        <img src="images/small3.webp" alt="">
+                    </div>
+                    <div>
+                        <img src="images/small4.webp" alt="">
+                        <img src="images/small5.webp" alt="">
+                        <img src="images/small6.webp" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="last">
+        <p>Copyright ©2021 All rights reserved | Made By @Mihir Soni</p>
+    </div>
+</body>
+</html>

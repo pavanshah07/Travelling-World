@@ -1,0 +1,454 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.font_family {
+    font-family: "Rubik";
+}
+.head {
+    width: 100%;
+    height: 110px;
+    background-color: blue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.head .left {
+    display: flex;
+    align-items: center;
+}
+.head .logo {
+    margin-left: 25px;
+    border-right: 1px solid rgb(24 24 24 / 24%);
+    padding-right: 56px;
+}
+.head .nav {
+    margin: 11px 0 0 56px;
+}
+.head .nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.head .nav ul li {
+    list-style: none;
+}
+.head .nav ul li a {
+    text-decoration: none;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+}
+.head .nav ul li a:hover,
+.head .nav ul li .active {
+    color: blue;
+}
+.text {
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 400;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 20px;
+    color: black;
+}
+.photo {
+    position: relative;
+    height: 600px;
+    background-size: 100% 100%;
+}
+.photo .content {
+    position: absolute;
+    width: 600px;
+    top: 33%;
+    left: 30%;
+    color: white;
+}
+.photo .img {
+    width: 2000px;
+    height: 500px;
+    overflow: hidden;
+}
+.photo .content h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 115px;
+    font-family: cursive;
+}
+.photo .content p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+.photo .content a {
+    margin-top: 50px;
+}
+.photo .content a {
+    background-color: #1ec6b6;
+    margin: auto;
+    height: 50px;
+    width: 170px;
+}
+.photo .content a,
+.where a,
+.plat a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+.where a,
+.plat a,
+.where2 a{
+    background-color: red;
+    height: 45px;
+    width: 140px;
+}
+.where a:hover,
+.plat a:hover,
+.where2 a:hover{
+    background-color: #1ec6b6;
+}
+.photo .content a:hover {
+    background-color: red;
+}
+.where {
+    background-color: #040e27;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+.where h2 {
+    color: white;
+    margin: 50px 50px 50px 0;
+    display: inline-block;
+    font-family: "Rubik";
+}
+.where .mihir {
+    margin: 10px;
+    height: 40px;
+    border-radius: 6px;
+    background: #040e27;
+    color: white;
+    border: 1px solid white;
+}
+.where select {
+    width: 150px;
+}
+.mihir2 {
+    margin-top: 150px;
+    margin-bottom: 150px;
+    text-align: center;
+}
+.mihir2 h1 {
+    font-family: "Rubik";
+    font-weight: bold;
+}
+.container1 {
+    margin-top: 30px;
+}
+.container .mihir4 {
+    border-radius: 5px;
+    transition: .4s;
+}
+.container .mihir4:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    z-index: 2;
+    transition-timing-function: ease-in-out;
+}
+.container .mihir4:hover .mihir3 a {
+    background-color: red;
+}
+.container .mihir4:hover .mihir3 h3 {
+    color: red;
+}
+.container {
+    position: relative
+}
+.container .mihir3 {
+    position: absolute;
+    bottom: 3%;
+    left: 10%;
+}
+.container .mihir3 h3 {
+    display: inline-block;
+    transition: .4s;
+    color: white;
+    font-weight: 700;
+}
+.container .mihir3 a {
+    text-decoration: none;
+    background-color: #1ec6b6;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 15px;
+    font-size: 10px;
+    font-weight: 700;
+    transition: .4s;
+}
+.plat {
+    background-image: url('images/plat1.png');
+    padding: 37px 0;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.plat input {
+    margin-left: 30px;
+    margin-right: 30px;
+    height: 50px;
+    width: 300px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.plat .context h3 {
+    color: white;
+    font-weight: 700;
+}
+.plat .context p {
+    opacity: .5;
+    font-weight: 400;
+}
+.footer,
+.last{
+    background-color: #040e27;
+    width: 100%;
+    padding-left: 50px;
+    padding-top: 40px;
+}
+.footer .row{
+    color: #aab1b7;
+}
+.end2{
+    margin-bottom: 20px;
+    color: white;
+}
+.end3 img{
+    margin: 4px 3px;
+    border-radius: 5px;
+}
+.last{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.last p{
+    color: white;
+    padding: 10px;
+    border-top: 2px solid #474e53;
+}
+.box1{
+    border:2px solid grey;
+}
+.where2{
+    border:1px solid grey;
+    border-radius: 4px;
+    height: 300px;
+}
+.where2 .mihir {
+    margin: 10px;
+    height: 40px;
+    width: 340px;
+    border-radius: 6px;
+    background: white;
+    color:grey;
+    border: 1px solid grey;
+}
+.where2 div a{
+    background-color: tomato;
+    text-decoration: none;
+    color: white;
+}
+.con {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: whitesmoke;
+    padding: 50px 0px 50px 0px;
+}
+.con .left {
+    border: 1px solid grey;
+    border-radius: 8px;
+    height: 300px;
+}
+.con .left .mihir {
+    margin: 15px;
+    height: 50px;
+    width: 340px;
+    border-radius: 6px;
+    background: whitesmoke;
+    color: grey;
+    border: 1px solid grey;
+}
+.con .left div {
+    background-color: tomato;
+    text-decoration: none;
+    color: white;
+    width: 105px;
+    margin: auto;
+    padding: auto;
+    height: 35px;
+    padding: 7px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+.con .left div:hover{
+    background-color: #1ec6b6;
+}
+.con .left div a {
+    text-decoration: none;
+    color: white;
+}
+.con .r1 .img2 {
+    margin: 0 20px 0 0px;
+    background: white;
+    margin-bottom: 25px;
+}
+.img2 div{
+    padding-left: 12px;
+}
+.img2{
+    display: inline-block;
+    border-radius: 20px;
+}
+.img2 div h3{
+    font-weight: bold;
+}
+.img2:hover div h3{
+    color: red;
+}
+.filter {
+    font-family: cursive;
+    font-weight: bold;
+    opacity: 0.6;
+}
+.img2 img{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.days{
+    float: right;
+    padding: 0 20px 0 0;
+}
+.registration {
+    background-color: whitesmoke;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 50px 0px 50px 0px;
+}
+.registration .mains {
+    margin: 10px;
+}
+.registration .main2 {
+    width: 235px;
+}
+.registration .btn2 {
+    margin: 10px;
+    height: 30px;
+    width: 80px;
+    border-radius: 6px;
+    background: white;
+    color: black;
+    border: 1px solid grey;
+}
+.about {
+    margin: 100px 0px 100px 80px;
+}
+.about .heading {
+    display: inline-block;
+    margin-left: 100px;
+    font-size: 35px;
+    border-bottom: 2px solid black;
+    font-family: cursive;
+    font-weight: bold;
+}
+.about .para {
+    margin-left: 180px;
+    font-size: 20px;
+    font-family: cursive;
+    padding-top: 70px;
+}
+.about .aboutimg,
+.about .about2 {
+    margin: 50px 0px 0px 180px;
+}
+.about .about2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 180px;
+}
+.about .about2 div {
+    text-align: center;
+}
+.about .about2 div h1 {
+    color: red;
+    opacity: .8;
+    font-size: 50px;
+    font-weight: bold;
+}
+.about .about2 div p {
+    font-weight: 700;
+    opacity: .8;
+}
+.map {
+    margin: 100px;
+}
+.map .left1 {
+    text-align: left;
+}
+.left1 {
+    width: 50%;
+}
+textarea {
+    width: 100%;
+    margin: 10px 0;
+}
+input[name='text1'] {
+    width: 48%;
+    margin: 10px 0;
+    height: 50px;
+}
+input[type='email'] {
+    margin-left: 10px;
+    width: 49%;
+    height: 50px;
+}
+input[name="text2"] {
+    width: 99.5%;
+    margin: 10px 0 30px;
+    height: 50px;
+}
+.left1 .bn {
+    text-decoration: none;
+    background-color: #1ec6b6;
+    padding: 17px 30px 17px;
+    color: white;
+}
+.left1 .bn:hover {
+    background-color: red;
+}
+.left1 h3 {
+    padding-top: 50px;
+    font-weight:bold;
+    font-family: cursive;
+    font-size: 30px;
+}
+.lr {
+    display: flex;
+}
+.right2 {
+    margin: 150px 0px 0px 200px;
+    text-align: left;
+}
+.right2 p{
+    color:grey;
+}

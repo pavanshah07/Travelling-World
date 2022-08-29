@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travelling World</title>
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <script src="bootstrap/bootstrap.min.js"></script>
+    <script src="bootstrap/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .photo {
+            position: relative;
+            height: 600px;
+            background-size: 100% 100%;
+            background-image: url("images/img1.webp");
+            animation: slider 9s infinite linear;
+        }
+        .head{
+            background-color: rgb(235, 163, 163);
+        }
+        @keyframes slider {
+            0% {
+                background-image: url("images/img1.webp")
+            }
+            35% {
+                background-image: url("images/img2.webp");
+            }
+            75% {
+                background-image: url("images/img3.webp");
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="head">
+        <div class="left">
+            <div class="logo">
+                <img src="images/logo2.webp" alt="">
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a class="text font_family active" href="#">Home</a></li>
+                    <li><a class="text font_family" href="destination.html">Destination</a></li>
+                    <li><a class="text font_family" href="registration.html">Registration</a></li>
+                    <li><a class="text font_family" href="about.html">About</a></li>
+                    <li><a class="text font_family" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="right">
+            <p class="text font font_family">Contact No. : 10(256)-928 256</p>
+        </div>
+    </div>
+
+    <div class="photo">
+        <div class="content font_family">
+            <h3>Australia</h3>
+            <p>Pixel perfect design with awesome content</p>
+            <a href="#">Explore Now</a>
+        </div>
+    </div>
+
+    <div class="where">
+        <h2>Where you want to go?</h2>
+        <input class="mihir" type="text" placeholder="Where to go?">
+        <input class="mihir" type="date" />
+        <select class="mihir" name="travel" id="">
+            <option value="">Travel Type</option>
+            <option value="">Another Option</option>
+            <option value="">Some Option</option>
+        </select>
+        <a href="#">Search</a>
+    </div>
+
+    <div class="mihir2">
+        <h1>Popular Destination</h1>
+        <p>Suffered alteration in some form, by injected humour or good day</p>
+        <p>randomised booth anim 8-bit hella wolf moon beard words.</p>
+        <div class="container container1">
+            <div class="row">
+                <div class="col-sm-4 mihir4">
+                    <img src="images/nimg1.webp" alt="image not found">
+                    <div class="mihir3">
+                        <h3>Italy</h3>
+                        <a href="destination.html">07 Places</a>
+                    </div>
+                </div>
+                <div class="col-sm-4 mihir4">
+                    <img src="images/nimg2.webp" alt="image not found">
+                    <div class="mihir3">
+                        <h3>Brazil</h3>
+                        <a href="destination.html">03 Places</a>
+                    </div>
+                </div>
+                <div class="col-sm-4 mihir4">
+                    <img src="images/nimg3.webp" alt="image not found">
+                    <div class="mihir3">
+                        <h3>America</h3>
+                        <a href="destination.html">10 Places</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container  container1">
+            <div class="row">
+                <div class="col-sm-4 mihir4">
+                    <img src="images/nimg4.webp" alt="image not found">
+                    <div class="mihir3">
+                        <h3>Nepal</h3>
+                        <a href="destination.html">02 Places</a>
+                    </div>
+                </div>
+                <div class="col-sm-4 mihir4">
+                    <img src="images/nimg5.webp" alt="image not found">
+                    <div class="mihir3">
+                        <h3>Maldives</h3>
+                        <a href="destination.html">02 Places</a>
+                    </div>
+                </div>
+                <div class="col-sm-4 mihir4">
+                    <img src="images/nimg6.webp" alt="image not found">
+                    <div class="mihir3">
+                        <h3>Indonesia</h3>
+                        <a href="destination.html">05 Places</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="plat">
+        <div class="context">
+            <h3>Subscribe Our Newsletter</h3>
+            <p>Subscribe newsletter to get offers and about</p>
+            <p>new places to discover</p>
+        </div>
+        <input type="email" placeholder="Your Email" />
+        <a href="#">Subscribe</a>
+    </div>
+
+    <div class="container footer">
+        <div class="row">
+            <div class="col-sm-3">
+                <img src="images/logo2.webp" alt="logo not found" class="end2">
+                <p>5th flora, 700/D kings road, green</p>
+                <p>lane New York-1782</p>
+                <p>+10 367 826 2567</p>
+                <p>contact@carpenter.com</p>
+            </div>
+            <div class="col-sm-3">
+                <h3 class="end2">Company</h3>
+                <p>Pricing</p>
+                <p>About</p>  
+                <p>Gallery</p>
+                <p>Contact</p>
+            </div>
+            <div class="col-sm-3">
+                <h3 class="end2">Popular Destination</h3>
+                <p>Indonesia</p>
+                <p>America</p>
+                <p>India</p>
+                <p>Switzerland</p>
+            </div>
+            <div class="col-sm-3">
+                <h3 class="end2">Instagram</h3>
+                <div class="end3">
+                    <div>
+                        <img src="images/small1.webp" alt="">
+                        <img src="images/small2.webp" alt="">
+                        <img src="images/small3.webp" alt="">
+                    </div>
+                    <div>
+                        <img src="images/small4.webp" alt="">
+                        <img src="images/small5.webp" alt="">
+                        <img src="images/small6.webp" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="last">
+        <p>Copyright ©2021 All rights reserved | Made By @Mihir Soni</p>
+    </div>
+
+</body>
+
+</html>
